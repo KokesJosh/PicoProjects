@@ -5,3 +5,5 @@ ARM's assembly language and learning how to use a linker. All within the GIT BAS
 Past the toolchain this also taught me what GPIO pins are, how to set their mode, direction, and voltage value. 
 # Libraries Used
 pico/stdlib.h
+# Circuit Diagram
+![Circuit Diagram](CircuitDiagram.jpeg)
