@@ -1,0 +1,16 @@
+.program neopixel_rainbow
+
+.side_set 1
+
+.define public T1 3
+.define public T2 3
+.define public T3 4
+
+.wrap_target
+loop:
+	out x, 1 			side 0 [T3 - 1]
+	jmp !x zero_case 	side 1 [T1 - 1]
+	jmp loop 			side 1 [T1 - 1]
+zero_case:
+	nop 				side 0 [T2 - 1]
+.wrap

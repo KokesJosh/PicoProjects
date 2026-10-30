@@ -1,0 +1,7 @@
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/pioasm.dir
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/rebuild_cache.dir
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/list_install_components.dir
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/install.dir
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/install/local.dir
+C:/Users/josh5/pico/Projects/blink/bin/pioasm/CMakeFiles/install/strip.dir

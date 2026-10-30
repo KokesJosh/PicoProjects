@@ -1,0 +1,4 @@
+# Ignore examples directory
+pico-examples/
+
+pico-sdk/
