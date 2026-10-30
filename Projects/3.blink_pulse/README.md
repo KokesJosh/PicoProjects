@@ -6,3 +6,5 @@ Pulse Width Module. The pico 2w's PWM has 8 slices (which are our counters) and 
 pico/stdlib.h
 
 hardware/pwm.h
+# Circuit Diagram
+![Circuit Diagram](CircuitDiagram.jpeg)

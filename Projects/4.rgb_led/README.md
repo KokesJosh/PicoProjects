@@ -12,3 +12,5 @@ math.h
 pico/stdlib.h
 
 hardware/pwm.h
+# Circuit Diagram
+![Circuit Diagram](CircuitDiagram.jpeg)

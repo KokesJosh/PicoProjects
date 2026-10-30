@@ -9,3 +9,5 @@ Switches allow us to connect or disconnect a circut to affect with components ar
 
 # Libraries Used
 pico/stdlib.h
+# Circuit Diagram
+![Circuit Diagram](CircuitDiagram.jpeg)

@@ -13,3 +13,5 @@
 pico/stdlib.h
 
 hardware/pio.h
+# Circuit Diagram
+![Circuit Diagram](CircuitDiagram.jpeg)
