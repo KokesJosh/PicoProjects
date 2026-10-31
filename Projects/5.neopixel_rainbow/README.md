@@ -15,3 +15,8 @@ pico/stdlib.h
 hardware/pio.h
 # Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.jpeg)
+
+# Demo Video
+
+https://github.com/user-attachments/assets/d4b82d1e-ea7e-4ac6-95ec-a7aa8fb9e932
+
