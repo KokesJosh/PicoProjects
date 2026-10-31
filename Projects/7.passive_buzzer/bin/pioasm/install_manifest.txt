@@ -1,0 +1,5 @@
+C:/Users/josh5/pico/Projects/passive_buzzer/bin/pioasm-install/pioasm/pioasm.exe
+C:/Users/josh5/pico/Projects/passive_buzzer/bin/pioasm-install/pioasm/pioasmTargets.cmake
+C:/Users/josh5/pico/Projects/passive_buzzer/bin/pioasm-install/pioasm/pioasmTargets-release.cmake
+C:/Users/josh5/pico/Projects/passive_buzzer/bin/pioasm-install/pioasm/pioasmConfig.cmake
+C:/Users/josh5/pico/Projects/passive_buzzer/bin/pioasm-install/pioasm/pioasmConfigVersion.cmake
