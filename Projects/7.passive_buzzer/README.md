@@ -17,3 +17,9 @@ hardware/pwm
 Same Diagram as Before, it's just now a passive buzzer.
 
 ![Circuit Diagram](CircuitDiagram.jpeg)
+
+# Demo Video
+
+
+https://github.com/user-attachments/assets/fb4575ea-bf92-4a95-a356-23ca86a0075a
+
