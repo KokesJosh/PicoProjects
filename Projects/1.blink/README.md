@@ -7,3 +7,9 @@ Past the toolchain this also taught me what GPIO pins are, how to set their mode
 pico/stdlib.h
 # Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.jpeg)
+# Demo Video
+
+https://github.com/user-attachments/assets/aaf15b34-9e00-4547-bf86-59ff76d63127
+
+
+
