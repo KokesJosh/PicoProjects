@@ -14,3 +14,8 @@ pico/stdlib.h
 hardware/pwm.h
 # Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.jpeg)
+
+# Demo Video
+
+https://github.com/user-attachments/assets/33a2348b-c959-4405-af84-c2d3dd6ebf91
+
