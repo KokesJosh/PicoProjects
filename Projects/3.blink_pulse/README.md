@@ -8,3 +8,8 @@ pico/stdlib.h
 hardware/pwm.h
 # Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.jpeg)
+
+# Video Demo
+
+https://github.com/user-attachments/assets/83f68ed6-4705-4ee1-938b-e61b59c7d14a
+
