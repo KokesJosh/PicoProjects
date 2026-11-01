@@ -2,3 +2,8 @@
 pico-examples/
 
 pico-sdk/
+
+**/bin/*
+
+
+!**/bin/*.uf2
