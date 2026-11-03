@@ -7,3 +7,6 @@ pico-sdk/
 
 
 !**/bin/*.uf2
+
+Projects/tests
+Projects/test/*
