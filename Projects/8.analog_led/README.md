@@ -15,4 +15,7 @@ hardware/adc
 # Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.jpg)
 
-# Video Demo
+# Demo Video
+
+https://github.com/user-attachments/assets/4f67895c-2f5d-4e4a-af5f-2f3a86cda841
+
