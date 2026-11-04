@@ -21,3 +21,7 @@ hardware/pwm
 ![Circuit Diagram](CircuitDiagram.jpg)
 
 # Demo Video
+
+
+https://github.com/user-attachments/assets/77faa0da-461a-44a4-9d79-081611141ac0
+
