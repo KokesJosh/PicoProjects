@@ -9,7 +9,9 @@ mimic voltage value of the analog input value. Thus allowing us to control the b
 
 # Libraries Used
 pico/stdlib
+
 hardware/pwm
+
 hardware/adc
 
 # Circuit Diagram
