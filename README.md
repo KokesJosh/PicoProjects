@@ -1,10 +1,26 @@
 # WELCOME!
-Welcome to my repository for my low-level programming/hardware journey! This repository will contain all of my currently completed projects with the Raspberry Pi Pico 2W microcontroller with full documentation.  Here is the common file structure you will see within each project.
+Welcome to my repository for my low-level programming/hardware journey! This repository will contain all of my currently completed projects with the Raspberry Pi Pico 2W microcontroller with full documentation. 
+
+Each project is listed in the order that I developed them in, I do not retroactively edit the source code or the README's to preserve authenticity in my growth. Any project can have the following prefixes:
+<b>
+
+xx. - Chronological order in which the project was made, represents the n'th project
+
+MP - Major Project, more complex than most of the other projects and is meant to display deep understanding in the subjects that are used
+
+BM - Bare Metal, these projects will use the minimal amount of the hardware SDK in favor of manual register manipulation
+
+Example Project Name: 05.MP_neopixel_led
+
 
 <br>
+
+Here is the common file structure you will see within each project:
+</b>
+
 <br>
 
-Project_Name
+xx.Project_Name
 
 |  - README.md (information about the project)
 
@@ -12,7 +28,7 @@ Project_Name
 
 \  - src
 
-_ _  | - Project_Name.c (Main program, can have other supporting programs.)
+_ _  | - program_name.c (Main program, can have other supporting programs.)
 
 _ _  | - CMakeLists.txt (CMake script creates our makefiles)
 
@@ -20,14 +36,10 @@ _ _  | - pico_sdk_import.cmake (CMake script that imports the sdk for us)
 
 \  - bin
 
-_ _  | - CMakeFiles (For our cmake cache to save our preferences among other things)
-
-_ _  | - Project_Name.uf2 (What will actually run on the pico)
-
-_ _  | - ... (Other misc build files)
+_ _  | - program_name.uf2 (What will actually run on the pico)
 
 <br>
-I have made the following bash function to automate the process for me:
+I have made the following bash function to automate the process of initializing a project for me:
 
 ````
 export PICOTOOL_DIRECTORY="C:/picotool-2.3.0-x64-win/picotool"
