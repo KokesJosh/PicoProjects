@@ -1,7 +1,16 @@
 # WELCOME!
 Welcome to my repository for my low-level programming/hardware journey! This repository will contain all of my currently completed projects with the Raspberry Pi Pico 2W microcontroller with full documentation. 
 
-Each project is listed in the order that I developed them in, I do not retroactively edit the source code or the README's to preserve authenticity in my growth. Any project can have the following prefixes:
+Each project is listed in the order that I developed them in, I do not retroactively edit the source code or the README's to preserve authenticity in my growth. 
+
+# Featured Projects
+[Neopixel_LED](Projects/05.MP_neopixel_led)
+
+This project is the first major challenge in my roster, it required me to learn the PIO interface and PIO assembly. The neopixel led ring is 8 LED's daisy chained in series where one led takes 12 bits before passing the info off to the next led. The biggest challenge was pinning down the correct timing for the communication protocol. Each bit transfer needed to be exactly 1.25 microseconds and calculating that from our PIO clock cycle speeds was tough.
+
+
+# Project Structure
+Any project can have the following prefixes:
 <b>
 
 xx. - Chronological order in which the project was made, represents the n'th project
