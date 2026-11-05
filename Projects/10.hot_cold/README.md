@@ -52,7 +52,7 @@ T_{1} = 25°C
 $$
 
 <BR>
-I then plugged the output temperature into clamped linear functions to limit our R and B values to the domain [0,4095]. 
+I then plugged the output temperature into clamped linear functions to limit our R and B values to the range [0,4095]. 
 R value is proportional to Temperature while B value is negatively proportional.
 
 <br>
