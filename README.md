@@ -27,24 +27,30 @@ _ _  | - Project_Name.uf2 (What will actually run on the pico)
 _ _  | - ... (Other misc build files)
 
 <br>
-I have made the following nice, albeit janky bash function to automate the process for me:
+I have made the following bash function to automate the process for me:
 
 ````
+export PICOTOOL_DIRECTORY="C:/picotool-2.3.0-x64-win/picotool"
+export DEFAULT_FILEPATH="$HOME/pico/Projects/default_files"
 picoinit() {
+	Project_Name="$1"
+	Executable_Name="$2"
 	echo "initilizing pico project..."
 	
-	mkdir $1
-	mkdir "$1/src"
-	mkdir "$1/bin"
-	touch "$1/README.md"
-	touch "$1/src/$1.c"
-	touch "$1/src/CMakeLists.txt"
-	cd $1
-	cp ~/pico/Projects/default_files/CMakeLists.txt ./src/
-	cp ~/pico/Projects/default_files/pico_sdk_import.cmake ./src/
-	cmake -S src -B bin -G Ninja -DPICO_BOARD=pico2_w -Dpicotool_DIR="C:/picotool-2.3.0-x64-win/picotool" -DPROJECT_NAME="$1"
+	
+	mkdir "$Project_Name"
+	mkdir "$Project_Name/src"
+	mkdir "$Project_Name/bin"
+	touch "$Project_Name/README.md"
+	touch "$Project_Name/src/$Executable_Name.c"
+	touch "$Project_Name/src/CMakeLists.txt"
+	cd "$Project_Name"
+	cp "$DEFAULT_FILEPATH/CMakeLists.txt" ./src/
+	cp "$DEFAULT_FILEPATH/pico_sdk_import.cmake" ./src/
+	cmake -S src -B bin -G Ninja -DPICO_BOARD=pico2_w -Dpicotool_DIR="$PICOTOOL_DIRECTORY" -DPROJECT_NAME="$Project_Name" -DEXE_NAME="$Executable_Name"
 	
 	echo "pico project built and configured, be sure to check CMakeLists.txt has all necessary dependencies"
+	
 }
 ````
 

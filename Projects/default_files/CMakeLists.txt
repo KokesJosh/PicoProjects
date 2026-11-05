@@ -6,15 +6,15 @@ PROJECT(${PROJECT_NAME} C CXX ASM)
 
 pico_sdk_init()
 
-add_executable(${PROJECT_NAME} ${PROJECT_NAME}.c)
+add_executable(${EXE_NAME} ${EXE_NAME}.c)
 
 
-target_link_libraries(${PROJECT_NAME} pico_stdlib pico_cyw43_arch_none)
+target_link_libraries(${EXE_NAME} pico_stdlib pico_cyw43_arch_none)
 
-pico_enable_stdio_usb(${PROJECT_NAME} 1)
-pico_enable_stdio_uart(${PROJECT_NAME} 0)
+pico_enable_stdio_usb(${EXE_NAME} 1)
+pico_enable_stdio_uart(${EXE_NAME} 0)
 
 #Create map/bin/hex
-pico_add_extra_outputs(${PROJECT_NAME})
+pico_add_extra_outputs(${EXE_NAME})
 
-# add_custom_command(COMMAND cp bin/${PROJECT_NAME}.uf2 /e/)
+# add_custom_command(COMMAND cp bin/${EXE_NAME}.uf2 /e/)
