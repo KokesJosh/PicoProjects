@@ -5,10 +5,25 @@ The general range is 100Ω to 1MΩ. I utilized the following equations to calcul
 <br>
 <br>
 
+Calculating input voltage:
+
+$$
+\frac{analogValue}{4095 * 3.3v}
+$$
+
+To calculate our resistance:
+
+$$
+R_{t} = \frac{R_{0} \cdot V}{3.3 - {V}}
+$$
+
+General thermistor equation:
 
 $$
 R_{t} = R_{0} \cdot e^{B \cdot (\frac{1}{T_{1}} - \frac{1}{T_{2}})}
 $$
+
+Rearranged to find T2, looks like this:
 
 $$
 T_{2} = \frac{1}{(\frac{1}{T_{1}} + ln(\frac{R_{t}}{R_{0}}) / B)}
