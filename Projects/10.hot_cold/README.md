@@ -5,24 +5,34 @@ The general range is 100Ω to 1MΩ. I utilized the following equations to calcul
 <br>
 <br>
 
+
 $$
 R_{t} = R_{0} \cdot e^{B \cdot (\frac{1}{T_{1}} - \frac{1}{T_{2}})}
+$$
 
-T_{2} = \frac{1}{(\frac{1}{T_{1}} + ln(\frac{R_{t}}{R_{0}} / B))}
+$$
+T_{2} = \frac{1}{(\frac{1}{T_{1}} + ln(\frac{R_{t}}{R_{0}}) / B)}
+$$
 
 Where: 
-T_{1}, T_{2} is Kelvin Temperature
 
-R_{t} = Resistance under T_{2}
+$$
+T_{1},\  T_{2} \ is \ Kelvin\  Temperature
+$$
 
-B = Thermal Index
+$$
+R_{t} = Resistance \ under \ T_{2}
+$$
+
+$$ B = Thermal \  Index $$
 
 We use the following Parameters:
 
-B = 3950
+$$ B = 3950 $$
 
-R = 10kΩ
+$$ R = 10kΩ $$
 
+$$
 T_{1} = 25°C
 $$
 
