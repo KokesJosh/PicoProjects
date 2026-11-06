@@ -21,7 +21,7 @@ The LEDs daisy chain information to each other. The C SDK does not provide deter
 
 To figure out how long each clock cycle needs to last we use the following formula to calculate it:
 
-$$ clkdiv = \frac{1.25µs}{1,000,000\frac{µs}{s} * freq_{\textsys}} / InstructionsPerBit $$
+$$ clkdiv = \frac{1.25µs}{1,000,000\frac{µs}{s} * freq_{sys}} / InstructionsPerBit $$
 
 We will then set the state machine's clkdiv to the resulting value, thus giving us a deterministic time. 
 
@@ -36,7 +36,7 @@ The goal of this project was to make the joystick positions correspond to a ligh
 
 The digital values of x & y have the range of [0, 4095], which isn't ideal for calculations. Instead I normalized the values using the following equation:
 
-$$ pos = (\fract{value}{4095} - 0.5) \cdot 2 $$
+$$ pos = (\frac{value}{4095} - 0.5) \cdot 2 $$
 
 I then took those values and converted it to a distance from the center using the following formula:
 
