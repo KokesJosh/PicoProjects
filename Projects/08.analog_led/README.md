@@ -19,5 +19,6 @@ hardware/adc
 
 # Demo Video
 
-https://github.com/user-attachments/assets/4f67895c-2f5d-4e4a-af5f-2f3a86cda841
+https://github.com/user-attachments/assets/cee945d8-aff8-4688-ac6c-64e4bc7ce3de
+
 
