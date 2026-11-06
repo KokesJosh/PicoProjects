@@ -58,3 +58,6 @@ Result: A joystick and LED where the joystick position corresponds to the on LED
 ![Circuit Diagram](CircuitDiagram.jpg)
 
 # Demo Video
+
+https://github.com/user-attachments/assets/d7eea784-b6c6-4d97-b874-7fb153cf82ec
+
