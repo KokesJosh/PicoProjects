@@ -54,6 +54,17 @@ Once we get our index value; we can load the color value into the corresponding 
 
 Result: A joystick and LED where the joystick position corresponds to the on LED.
 
+# Libraries Used
+math.h
+
+stdint.h
+
+pico/stdlib
+
+hardware/pio
+
+hardware/adc
+
 # Circuit Diagram
 ![Circuit Diagram](CircuitDiagram.jpg)
 
