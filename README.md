@@ -80,6 +80,7 @@ picoinit() {
 
 # Tools used in project
 - Raspberry Pi Pico 2W
+- C Programming Language
 - Freenove Ultimate Pico Starter Kit
 - CMake
 - Ninja
