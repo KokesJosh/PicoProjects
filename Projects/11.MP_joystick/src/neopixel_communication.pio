@@ -1,0 +1,12 @@
+.program neopixel_communication
+
+.side_set 1
+
+.wrap_target
+start:
+out x, 1		side 0 [3] ; set our gpio to low for 4 clk cycles to start our clk period and take a bit from the OSR
+jmp !x, zero_l	side 1 [2] ; set our gpio to high for 3 clk cycles and jump if x is zero
+jmp start		side 1 [2] ; loop back to the start while setting high to our gpio to make 6 high clk cycles in the period
+zero_l:
+nop 			side 0 [2] ; wait 3 clock cycles on low so high is only 3 clk cycles in the period
+.wrap
