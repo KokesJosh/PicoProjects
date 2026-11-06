@@ -99,7 +99,7 @@ void neopixel_put_data(joystick_data_t joystick_data, uint32_t state_machine) {
 	if(dist < DEAD_ZONE_BOUNDS)
 		goto write;
 	
-	float angle = (atan2(y, x) * (180.0f / 3.14159f)) + 180.0f;
+	float angle = (atan2(y, x) * (180.0f / 3.14159f)) + 180.0f; 
 	uint32_t index = (uint32_t) round(angle / 45.0f) % 8;
 	
 	// Make brightness of LED proportional to distance for smooth brightness gradient
