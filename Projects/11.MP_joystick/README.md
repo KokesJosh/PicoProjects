@@ -21,7 +21,7 @@ The LEDs daisy chain information to each other. The C SDK does not provide deter
 
 To figure out how long each bit period needs to last we use the following formula to calculate it:
 
-$$ clkdiv = \frac{1.25µs \cdot freq_{sys}}{1,000,000\frac{µs}{s}} / InstructionsPerBit $$
+$$ clkdiv = \frac{1.25µs \cdot freq_{sys}}{1,000,000\frac{µs}{s}} / CyclesPerBit $$
 
 We will then set the state machine's clkdiv to the resulting value, thus giving us a deterministic time. 
 
@@ -64,7 +64,7 @@ https://github.com/user-attachments/assets/d7eea784-b6c6-4d97-b874-7fb153cf82ec
 
 # Engineering Challenge(s)
 
-One engineering challenge I had while developing this system was determining the best approach for dead zones; I found the neutral position of the joystick to produce 2048 +- 25. When normalized that means it produced values [-0.08, 0.08]. I initially used square dead zones using the formula:
+One engineering challenge I had while developing this system was determining the best approach for dead zones; I found the neutral position of the joystick to produce 2048 +- 25. When normalized that means it produced values [-0.012, 0.012]. I initially used square dead zones using the formula:
 
 $$ |\ x| < dead zone ?\  x = 0\  :\  x = x $$
 
@@ -72,11 +72,11 @@ $$ |\ y| < dead zone ?\  y = 0\  :\  y = y $$
 
 But this would prove to be ineffective and cause flickering issues on the corners of the joystick.
 
-After some testing I determines circular deadzones using euclidian distance was a better approach to resolve the issue:
+After some testing I determined circular dead zones using Euclidian distance was a better approach to resolve the issue:
 
 $$ distance = \sqrt{pos_{x}^2+pos_{y}^2} $$
 
-This resulted in much more consistent LED activation without any flickering.
+But after observing the LEDS a bit more, I determined my dead zones were too small and resulted in flickering still. I adjusted the parameters until I found a dead zone of 0.08 to work best. This resulted in much more consistent LED activation without any flickering.
 
 # Libraries Used
 math.h
