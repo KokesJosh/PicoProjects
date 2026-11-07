@@ -1,5 +1,5 @@
 # Overview
-This is one of my most challenging projects yet. We are combining many different concepts in embedded systems into 1 project. 
+This project combined many different embedded systems concepts such as PIO and ADC into one cohesive project.
 
 <br>
 <b>
@@ -54,6 +54,30 @@ Once we get our index value; we can load the color value into the corresponding 
 
 Result: A joystick and LED where the joystick position corresponds to the on LED.
 
+
+# Circuit Diagram
+![Circuit Diagram](CircuitDiagram.jpg)
+
+# Demo Video
+
+https://github.com/user-attachments/assets/d7eea784-b6c6-4d97-b874-7fb153cf82ec
+
+# Engineering Challenge(s)
+
+One engineering challenge I had while developing this system was determining the best approach for dead zones; I found the neutral position of the joystick to produce 2048 +- 25. When normalized that means it produced values [-0.08, 0.08]. I initially used square dead zones using the formula:
+
+$$ |\ x| < dead zone ?\  x = 0\  :\  x = x $$
+
+$$ |\ y| < dead zone ?\  y = 0\  :\  y = y $$
+
+But this would prove to be ineffective and cause flickering issues on the corners of the joystick.
+
+After some testing I determines circular deadzones using euclidian distance was a better approach to resolve the issue:
+
+$$ distance = \sqrt{pos_{x}^2+pos_{y}^2} $$
+
+This resulted in much more consistent LED activation without any flickering.
+
 # Libraries Used
 math.h
 
@@ -64,11 +88,4 @@ pico/stdlib
 hardware/pio
 
 hardware/adc
-
-# Circuit Diagram
-![Circuit Diagram](CircuitDiagram.jpg)
-
-# Demo Video
-
-https://github.com/user-attachments/assets/d7eea784-b6c6-4d97-b874-7fb153cf82ec
 
